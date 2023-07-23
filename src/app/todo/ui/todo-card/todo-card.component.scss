@@ -1,0 +1,41 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 2.5rem 16px 2.5rem;
+  border-bottom: 1px solid #ccc;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .update {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100vw;
+    }
+
+    .delete {
+      align-self: flex-end;
+    }
+  }
+
+  &__category-info {
+    padding-left: 2.4rem;
+  }
+}
+
+.todo--completed {
+  background-color: #59e77f;
+  border: none;
+}
